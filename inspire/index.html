@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="app/init.js"></script>
+	<script src="app/components/weather/weather-service.js"></script>
+	<script src="app/components/image/image-service.js"></script>
+	<script src="app/components/quote/quote-service.js"></script>
+	<script src="app/components/todo/todo-service.js"></script>
+</head>
+
+<body id="body">
+	<h1 class="divide">Good morning, Trevor</h1>
+	<div id="quote" class="divide">
+<h3>Today's Quote</h3>
+<br>
+<blockquote id="qod-quote">
+   ... loading ...
+</blockquote>
+<script src="http://quotesondesign.com/api/3.0/api-3.0.js" 
+type="text/javascript" charset="utf-8"></script>
+	</div>
+	<br>
+	<div id="weather" class="divide">
+
+	</div>
+	<br>
+<div>
+<div id="todo" class="divide">
+  <h2>To-Do's</h2>
+  <input type="text" id="myInput" placeholder="You gonna write something on the list or what?">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+
+</ul>
+</div>
+
+	<!--Load your scripts below-->
+	<script src="app/components/weather/weather-controller.js"></script>
+	<script src="app/components/image/image-controller.js"></script>
+	<script src="app/components/quote/quote-controller.js"></script>
+	<script src="app/components/todo/todo-controller.js"></script>
+
+</body>
+
+</html>
